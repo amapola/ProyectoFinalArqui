@@ -14,9 +14,13 @@ import java.util.Date;
 public class ControladorDePagos {
     private Date fechaActual;
     private int contadorDeViernes;
-    private ArrayList<Empleado> empleados;
-    public void pagarAEmpleadosPorHora()
+    private ArrayList<Empleado> empleadosFijos;
+    private ArrayList<Empleado> empleadosPorHora;
+    public void pagarAEmpleadosFijos()
     {
+        for (Empleado ef: empleadosFijos) {
+        }
+
     }
     
 }

@@ -11,10 +11,10 @@ package modelo;
 public abstract class FormaDePago {
    
     public abstract void enviarCheque();
-    public abstract void enviarPapeleta(Sueldo papeleta);
-    public void pagar(Sueldo papeleta){
+    public abstract void enviarPapeleta();
+    public void pagar(){
         enviarCheque();
-        enviarPapeleta(papeleta);
+        enviarPapeleta();
     }
     public static FormaDePago formaDePago(String formaDePagoString)
     {

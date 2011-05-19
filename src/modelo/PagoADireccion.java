@@ -17,8 +17,8 @@ public class PagoADireccion extends FormaDePago{
     }
 
     @Override
-    public void enviarPapeleta(Sueldo papeleta) {
-        papeleta.generarPapeletaDePago();
+    public void enviarPapeleta() {
+      
     }
 
 }

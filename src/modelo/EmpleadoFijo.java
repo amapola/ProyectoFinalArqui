@@ -13,11 +13,12 @@ import java.util.ArrayList;
 public class EmpleadoFijo extends Empleado{
     boolean conComision;
     // terminar constructor
-    public EmpleadoFijo()
+    public EmpleadoFijo(String idEmpleado, String nombreCompleto, int telefono,String direccion, Double sueldoFijo, String formaDePago, boolean conComision)
     {
+        this.conComision = conComision;
+        setArgumentosDeEmpleado(idEmpleado, nombreCompleto, telefono, direccion, sueldoFijo, formaDePago);
         
     }
-    
     public boolean trabajaConComision()
     {
         return conComision;
@@ -30,7 +31,6 @@ public class EmpleadoFijo extends Empleado{
         return ventas;
     }
    
-    
             
 
 }
