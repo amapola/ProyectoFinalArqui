@@ -4,13 +4,15 @@
  */
 package modelo;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author HP
  */
 public class EmpleadoFijo extends Empleado{
     boolean conComision;
-    
+    // terminar constructor
     public EmpleadoFijo()
     {
         
@@ -21,6 +23,12 @@ public class EmpleadoFijo extends Empleado{
         return conComision;
     }
 
+    public ArrayList<Venta> getVentas()
+    {
+        ArrayList<Venta> ventas = null;
+        //LLamar a datos
+        return ventas;
+    }
    
     
             

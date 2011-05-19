@@ -5,6 +5,7 @@
 package modelo;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -14,7 +15,7 @@ import java.util.Date;
 public class EmpleadoPorHoras extends Empleado{
     private ArrayList<TarjetaDiaria> tarjetas = new ArrayList<TarjetaDiaria>();
       
-    public void llenarTarjetaDiaria(Date fecha, int cantidadHoras)
+    public void llenarTarjetaDiaria(Calendar fecha, int cantidadHoras)
     {
         TarjetaDiaria tarjeta = new TarjetaDiaria(this.idEmpleado, fecha, cantidadHoras);
         tarjeta.guardar();
