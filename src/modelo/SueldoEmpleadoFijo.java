@@ -10,7 +10,7 @@ package modelo;
  */
 class SueldoEmpleadoFijo extends Sueldo {
 
-    public void imprimir() {
+    public void generarPapeletaDePago() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 

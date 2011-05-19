@@ -4,20 +4,19 @@
  */
 package modelo;
 
-import java.util.Date;
-
+import java.util.Calendar;
 /**
  *
  * @author HP
  */
 public abstract class Sueldo {
-   public Empleado empleado;
-   private Date fecha;
-   private Double monto;
-   private Double cargoPorServicios;
-   private Double cargoPorAporteJubilacion;
+   public double sueldoFijo;
+   private Calendar fecha;
+   private double monto;
+   private double cargoPorServicios;
+   private double cargoPorAporteJubilacion;
    
    public abstract Double CalcularSueldoEmpleado(); 
-   public abstract void imprimir();
+   public abstract void generarPapeletaDePago();
     
 }
