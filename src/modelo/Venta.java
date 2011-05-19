@@ -4,28 +4,31 @@
  */
 package modelo;
 
-import java.util.Date;
+import java.util.Calendar;
 
 /**
  *
  * @author HP
  */
-public class Venta {
+public class Venta{
+
     String idEmpleado;
-    Date fecha;
-    Double monto;
+    Calendar fecha;
+    double monto;
     
-    public Venta(Date fecha, Double monto)
+    public Venta(Calendar fecha, double monto, String idEmpleado)
     {
         this.fecha = fecha;
         this.monto = monto;
-    }
-    public void asignarAEmpleado(String idEmpleado)
-    {
         this.idEmpleado = idEmpleado;
     }
-    public void guardar()
+
+    public Calendar getFecha()
     {
-        //llamar a DATOS
+        return this.fecha;
+    }
+    public double getSueldo()
+    {
+        return this.monto;
     }
 }

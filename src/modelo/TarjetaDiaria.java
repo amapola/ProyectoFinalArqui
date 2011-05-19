@@ -4,6 +4,7 @@
  */
 package modelo;
 
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -12,10 +13,10 @@ import java.util.Date;
  */
 public class TarjetaDiaria {
     private String idEmpleado;
-    private Date fecha;
+    private Calendar fecha;
     private int horasTrabajadas;
 
-    public TarjetaDiaria(String idEmpleado, Date fecha, int cantidadHoras) {
+    public TarjetaDiaria(String idEmpleado, Calendar fecha, int cantidadHoras) {
         this.fecha = fecha;
         this.horasTrabajadas = cantidadHoras;
         this.idEmpleado = idEmpleado;
@@ -23,6 +24,8 @@ public class TarjetaDiaria {
     
     public int getHorasExtras()
     {
+        int hora = this.fecha.get(Calendar.HOUR_OF_DAY);
+        int horafinal = hora+ this.horasTrabajadas;
         if (horasTrabajadas>8) {
             return horasTrabajadas-8;
         }
