@@ -5,7 +5,7 @@
 package modelo;
 
 import java.util.ArrayList;
-import java.util.Date;
+import java.util.Calendar;
 
 /**
  *
@@ -16,12 +16,12 @@ public abstract class Empleado {
     protected String nombreCompleto;
     protected int telefono;
     protected String direccion;
-    protected Double aporteJubilacion = null;
-    protected Double sueldoFijo;
+    protected double aporteJubilacion;
+    protected double sueldoFijo;
     protected String formaDePago;
 
     
-    public void setArgumentosDeEmpleado(String idEmpleado, String nombreCompleto, int telefono,String direccion, Double sueldoFijo, String formaDePago )
+    public void setArgumentosDeEmpleado(String idEmpleado, String nombreCompleto, int telefono,String direccion, double sueldoFijo, String formaDePago )
     {
         this.idEmpleado = idEmpleado;
         this.nombreCompleto = nombreCompleto;
@@ -30,7 +30,7 @@ public abstract class Empleado {
         this.sueldoFijo = sueldoFijo;
         this.formaDePago = formaDePago;
     }
-    public void agregarAlSindicato(Double aporteJubilacion)
+    public void agregarAlSindicato(double aporteJubilacion)
     {
         this.aporteJubilacion = aporteJubilacion;
     }
@@ -42,5 +42,6 @@ public abstract class Empleado {
     String getIdEmpleado() {
         return idEmpleado;
     }
+    public abstract double getSueldo(Calendar fecha);
 
 }

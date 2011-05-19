@@ -20,5 +20,9 @@ public class EmpleadoPorHoras extends Empleado{
         TarjetaDiaria tarjeta = new TarjetaDiaria(this.idEmpleado, fecha, cantidadHoras);
         tarjeta.guardar();
     }
+
+    public double getSueldo(Calendar fecha) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
     
 }

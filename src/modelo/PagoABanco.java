@@ -21,5 +21,6 @@ public class PagoABanco extends FormaDePago{
         System.out.println("Enviando papeleta a: "+ email);
     }
 
+
     
 }
