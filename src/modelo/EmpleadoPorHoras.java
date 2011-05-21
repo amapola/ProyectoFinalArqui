@@ -14,7 +14,7 @@ import java.util.Date;
  */
 public class EmpleadoPorHoras extends Empleado{
     private ArrayList<TarjetaDiaria> tarjetas = new ArrayList<TarjetaDiaria>();
-      
+
     public void llenarTarjetaDiaria(Calendar fecha, int cantidadHoras)
     {
         TarjetaDiaria tarjeta = new TarjetaDiaria(this.idEmpleado, fecha, cantidadHoras);

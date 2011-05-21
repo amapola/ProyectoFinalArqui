@@ -16,11 +16,10 @@ public abstract class Empleado {
     protected String nombreCompleto;
     protected int telefono;
     protected String direccion;
-    protected double aporteJubilacion;
+    protected double aporteJubilacion=-1;
     protected double sueldoFijo;
     protected String formaDePago;
 
-    
     public void setArgumentosDeEmpleado(String idEmpleado, String nombreCompleto, int telefono,String direccion, double sueldoFijo, String formaDePago )
     {
         this.idEmpleado = idEmpleado;
@@ -43,5 +42,17 @@ public abstract class Empleado {
         return idEmpleado;
     }
     public abstract double getSueldo(Calendar fecha);
+
+    String getFormaDePago() {
+        return formaDePago;
+    }
+
+    boolean perteneceAlSindicato() {
+        return aporteJubilacion==-1;
+    }
+
+    double getAporteJubilacion() {
+       return aporteJubilacion;
+    }
 
 }
