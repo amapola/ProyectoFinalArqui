@@ -13,13 +13,13 @@ import java.util.ArrayList;
 public class Sindicato {
     float porcentajeAporteJubilacion;
    
-    public ArrayList<Servicio> getServiciosUsadosPor(String idEmpleado)
+    public static ArrayList<Servicio> getServiciosUsadosPor(String idEmpleado)
     {
         ArrayList<Servicio> servicios = new ArrayList<Servicio>();
         //llamar a DATOS
         return servicios;
     }
-    public double getCargosPorServicios(String idEmpleado)
+    public  double getCargosPorServicios(String idEmpleado)
     {
         ArrayList<Servicio> servicios = getServiciosUsadosPor(idEmpleado);
         double cargos = 0;
