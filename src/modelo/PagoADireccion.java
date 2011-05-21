@@ -16,9 +16,8 @@ public class PagoADireccion extends FormaDePago{
         System.out.println("Enviando cheque a: "+ direccion);
     }
 
-    @Override
-    public void enviarPapeleta() {
-      
+    public void enviarPapeleta(PapeletaDePago papeleta) {
+      papeleta.imprimir();
     }
 
 }

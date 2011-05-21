@@ -17,8 +17,8 @@ public class PagoABanco extends FormaDePago{
         System.out.println("Enviando cheque a: "+ banco);
     }
 
-    public void enviarPapeleta() {
-        System.out.println("Enviando papeleta a: "+ email);
+    public void enviarPapeleta(PapeletaDePago papeleta) {
+        papeleta.enviarPorCorreo(email);
     }
 
 
